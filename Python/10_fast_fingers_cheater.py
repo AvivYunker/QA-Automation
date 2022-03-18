@@ -10,7 +10,6 @@ allow_all_cookies_button.click()
 
 start_typing_test_button = browser.find_element_by_id('typing-test')
 start_typing_test_button.click()
-time.sleep(2)
 long_list = browser.find_element_by_id('row1')
 all_words = list(long_list.find_elements_by_tag_name('span'))
 
@@ -22,5 +21,5 @@ for cnt in range(0, len(all_words), 1):
 input_word_field.clear()
 
 #print("all_words is: " + str(all_words))
-time.sleep(20)
+time.sleep(1000)
 browser.quit()
