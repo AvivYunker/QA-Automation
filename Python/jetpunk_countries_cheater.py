@@ -31,4 +31,5 @@ for countries in continents:
             print(answer_text_box.text)
 
 
-time.sleep(50)
+time.sleep(30)
+browser.quit()
